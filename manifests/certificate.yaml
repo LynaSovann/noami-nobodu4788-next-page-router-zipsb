@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: noami-nobodu4788-next-page-router-zipsb-certificate
+  namespace: noami-nobodu4788-next-page-router-zipsb
+spec:
+  secretName: noami-nobodu4788-next-page-router-zipsb-secret-tls
+  commonName: noami-nobodu4788-next-page-router-zipsb.assessify.org
+  dnsNames:
+  - noami-nobodu4788-next-page-router-zipsb.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
